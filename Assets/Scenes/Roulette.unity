@@ -493,7 +493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50.3, y: 0.0000066757}
+  m_AnchoredPosition: {x: -42.800026, y: 0.0000066757}
   m_SizeDelta: {x: 885.6, y: 638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &607580716
@@ -1341,10 +1341,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageParentTransform: {fileID: 498314823}
   choices:
-  - 0
-  - 3
-  - 5
-  - 10
+  - "\u96F6"
+  - "\u4E09"
+  - "\u4E94"
+  - "\u5341"
   - "\u85E4\u7530\u306B\u30B4\u30FC\u30EB"
   rouletteColors:
   - {r: 1, g: 1, b: 1, a: 1}

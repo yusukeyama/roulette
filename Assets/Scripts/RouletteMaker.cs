@@ -15,9 +15,21 @@ public class RouletteMaker : MonoBehaviour {
         for (int i = 0; i < choices.Count; i++) {
             var obj = Instantiate (rouletteImage, imageParentTransform);
             obj.color = rouletteColors[(choices.Count - 1 - i)];
-            obj.fillAmount = ratePerRoulette * (choices.Count - i);
+            if (i == 1)
+            {
+                obj.fillAmount = 0.95f;
+            } else
+            {
+                obj.fillAmount = ratePerRoulette * (choices.Count - i);
+            }
             obj.GetComponentInChildren<Text> ().text = choices[(choices.Count - 1 - i)];
-            obj.transform.GetChild (0).transform.rotation = Quaternion.Euler (0, 0, ((rotatePerRoulette / 2) + rotatePerRoulette * i));
+            if (i == 0)
+            {
+                obj.transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, 9.26f);
+            } else
+            {
+                obj.transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, ((rotatePerRoulette / 2) + rotatePerRoulette * i));
+            }
         }
         rController.SetRoulette();
         rController.rMaker = this;
