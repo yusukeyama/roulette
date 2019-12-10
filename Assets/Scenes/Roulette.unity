@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1341,11 +1341,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageParentTransform: {fileID: 498314823}
   choices:
-  - "\u96F6"
-  - "\u4E09"
-  - "\u4E94"
+  - 0
+  - 3
+  - 5
   - "\u5341"
-  - "\u85E4\u7530\u306B\u30B4\u30FC\u30EB"
+  - "\u85E4\u7530\u30CB\u30B3\u30EB"
   rouletteColors:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 0.9723208, b: 0, a: 1}

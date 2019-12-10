@@ -19,7 +19,7 @@ public class RouletteMaker : MonoBehaviour {
             switch (i)
             {
                 case 1:
-                    obj.fillAmount = 0.95f;
+                    obj.fillAmount = 0.97f;
                     break;
                 case 2:
                     obj.fillAmount = 0.8f;
@@ -35,11 +35,16 @@ public class RouletteMaker : MonoBehaviour {
                     break;
             }
             obj.GetComponentInChildren<Text>().text = choices[(choices.Count - 1 - i)];
+            if (i == 0)
+            {
+                obj.transform.GetChild(0).transform.GetChild(0).GetComponent<RectTransform>().sizeDelta = new Vector2(74.95f, 29.17f);
+                obj.transform.GetChild(0).transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(-0.5f, 33f);
+            }
 
             switch (i)
             {
                 case 0:
-                    obj.transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, 9.26f);
+                    obj.transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, 5.26f);
                     break;
                 case 1:
                     obj.transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, 47.31f);
