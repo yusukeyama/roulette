@@ -71,6 +71,7 @@ public class RouletteController : MonoBehaviour {
     }
 
     private void ShowResult (float x) {
+        Debug.Log(x);
         for (int i = 1; i <= rMaker.choices.Count; i++) {
             if (((rotatePerRoulette * (i - 1) <= x) && x <= (rotatePerRoulette * i)) ||
                 (-(360 - ((i - 1) * rotatePerRoulette)) >= x && x >= -(360 - (i * rotatePerRoulette)))) {
@@ -81,7 +82,7 @@ public class RouletteController : MonoBehaviour {
             StartCoroutine(Buttobi());
             return;
         }
-        resultText.text = result + "\nが当たったよ！";
+        //resultText.text = result + "\nが当たったよ！";
         retryButton.gameObject.SetActive(true);
     }
 
